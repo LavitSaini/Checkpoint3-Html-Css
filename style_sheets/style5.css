@@ -319,7 +319,7 @@ i {
 /* Section - 1 */
 
 .bg-img {
-  background-image: url(images/media/hero/blog_hero.jpg);
+  background-image: url(/images/media/hero/blog_hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
