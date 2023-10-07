@@ -1,4 +1,4 @@
-/* Contact Page Style Sheet */
+/* Home Page Style Sheet */
 
 /* Fonts */
 
@@ -154,10 +154,6 @@ acronym {
   flex-direction: column;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
 /* Elements Classes */
 
 a {
@@ -167,14 +163,6 @@ a {
 strong {
   color: var(--secondary);
   font-size: 13px;
-}
-
-figure {
-  margin: 0px;
-}
-
-textarea{
-  resize: none;
 }
 
 /* Button Classes */
@@ -323,128 +311,295 @@ i {
   border-bottom: 2px solid var(--secondary);
 }
 
+/* Main Section */
+
 /* Section - 1 */
 
-.bg-img {
-  background-image: url(/contact_hero.jpg);
-  background-repeat: no-repeat;
+.bg-image {
+  background-image: url("h1_hero.jpg");
   background-position: center;
+  background-size: cover;
+  height: 100%;
 }
 
 .section-1 {
-  height: 300px;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-.section-1 h3 {
-  color: #fff;
-  font-size: 40px;
+.sec-1-text p {
+  font-weight: 400;
+  color: var(--secondary);
+  font-size: 14px;
+}
+
+.sec-1-text h1 {
+  max-width: 40%;
+  font-size: 46px;
+  color: var(--primary);
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 4px 0px;
+}
+
+.sec-1-text .sec-1-btn {
+  display: inline-block;
+  font-size: 11px;
+  justify-content: center;
+  margin-top: 32px;
+  padding: 13px 20px;
+  font-weight: 500;
 }
 
 /* Section - 2 */
 
-iframe {
-  width: 100%;
-  height: 330px;
+.article {
+  flex: 0 1 31.5%;
 }
 
-.form-box {
-  margin-top: 50px;
-  align-items: flex-start;
+.article img {
+  width: 100%;
 }
 
-.box-child-1 {
-  font-size: 24px;
-  color: var(--primary);
-  font-weight: 600;
-  width: 100%;
+.section-2 .article h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.article-border {
+  border: 3px solid var(--secondary);
+  padding: 22px 28px;
+}
+
+.sec-2-article-line {
+  width: 36%;
+  height: 3px;
+  background-color: var(--secondary);
   margin: 16px 0px;
+  border-radius: 4px;
 }
 
-.box-child-2 {
-  flex: 0 1 60%;
+.article-border p {
+  margin-bottom: 20px;
 }
 
-.box-child-3 {
-  flex: 0 1 31%;
-}
-
-.full {
-  width: 100%;
-}
-
-.half{
-  width: 47.5%;
-  margin: 24px 0px;
-}
-
-.form-box input, textarea{
-  outline: none;
-  border: 1px solid #d4d4d4;
-  padding: 16px 12px;
-}
-
-.form-box input::placeholder, textarea::placeholder{
-  font-size: 13px;
-  font-family: "Poppins", sans-serif;
-}
-
-.form-box input[type = "text"], input[type = "email"]{
-  font-family: "Poppins", sans-serif;
-  color: #000;
-}
-
-.send-btn{
-  display: inline-block;
-  border-radius: 0px;
-  letter-spacing: 2px;
-  padding: 12px 32px;
-  margin-top: 28px;
-}
-
-.contact-info{
-  margin-bottom: 24px;
-  align-items: flex-start;
-}
-
-.contact-info i{
-  font-size: 24px;
-  color: var(--dark);
-}
-
-.info-box{
-  flex: 0 1 80%
-}
-
-.contact-info h5{
+.article-border .article-btn {
+  font-size: 11px;
   color: var(--dark);
   font-weight: 500;
 }
 
-.contact-info p{
-  font-size: 15px;
-  color: var(--text-light);
-  font-weight: 500;
+.article-border .article-btn i {
+  color: var(--dark);
+  margin-left: 4px;
+  font-size: 10px;
 }
 
+.article-border .article-btn:hover {
+  text-decoration: underline;
+}
 
 /* Section - 3 */
 
-.section-3 {
+.sec-3-child-1 {
+  flex: 0 1 60%;
+}
+
+.sec-3-child-2 {
+  position: relative;
+  flex: 0 1 40%;
+}
+
+.sec-3-child-1 img {
+  width: 100%;
+}
+
+.bg-white {
+  left: -86px;
+  position: absolute;
+  padding: 38px;
+  background-color: rgba(255, 255, 255, 0.8);
+  bottom: 0px;
+}
+
+.bg-white p {
+  margin: 36px 0px;
+}
+
+.bg-white .sec-3-btn {
+  display: inline-block;
+  justify-content: center;
+  font-size: 11px;
+}
+
+/* Section - 4 */
+.section-4 {
+  padding-bottom: 38px;
+}
+
+.service-box {
+  margin-top: 32px;
+}
+
+.service-box .box {
+  background-color: var(--bg);
+  flex: 0 1 31.5%;
+  padding: 38px 24px;
+  text-align: center;
+}
+
+.service-box .box i {
+  font-size: 32px;
+  color: var(--dark);
+}
+
+.service-box .box h4 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.service-box .box p {
+  font-size: 12px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.service-button {
+  padding: 70px 0px;
+}
+
+/* Section - 5 */
+
+.section-5 {
+  padding-top: 136px;
+  padding-bottom: 126px;
+}
+
+/* Section - 5 (Child - 1)*/
+
+.sec-5-child-1 {
+  flex: 0 1 38%;
+}
+
+.sec-5-child-1 p {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.sec-5-child-1 .sec-5-btn {
+  display: inline-block;
+  justify-content: center;
+}
+
+/* Section - 5 (Child - 2)*/
+
+.sec-5-child-2 {
+  flex: 0 1 60%;
+  overflow: hidden;
+}
+
+.sec-5-child-2 .sec-5-img {
+  margin-left: 12px;
+}
+
+.sec-5-img img {
+  width: 272px;
+}
+
+/* Section - 6 */
+
+.sec-6-img img {
+  width: 80px;
+}
+
+.rating-section .para-1 {
+  margin-top: 32px;
+  margin-bottom: 18px;
+  width: 60%;
+  text-align: center;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.rating-section i {
+  font-size: 11px;
+  color: #fbba42;
+  margin-right: 5px;
+}
+
+.rating-section .para-2 {
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 10px;
+  letter-spacing: -0.5px;
+}
+
+.para-2 span {
+  font-size: 11px;
+  color: var(--text-light);
+}
+
+/* Section - 7 */
+
+.section-7 {
+  padding-bottom: 136px;
+}
+
+.article-section {
+  margin-top: 60px;
+}
+
+.sec-7-article {
+  flex: 0 1 31.5%;
+}
+
+.sec-7-article img {
+  width: 100%;
+}
+
+.news-info {
+  padding: 12px 16px;
+}
+
+.news-info .red-para {
+  font-size: 10px;
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.news-info h5 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.news-info p {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+/* Section - 8 */
+
+.section-8 {
   padding-top: 70px;
   padding-bottom: 70px;
   align-items: flex-start;
 }
 
-.sec-3-text {
+.sec-8-text {
   flex: 0 1 35%;
 }
 
-.sec-3-text h3 {
+.sec-8-text h3 {
   color: #fff;
   margin-bottom: 16px;
 }
 
-.sec-3-text p {
+.sec-8-text p {
   color: #fff;
   font-size: 12px;
   line-height: 1.7;
@@ -464,7 +619,7 @@ iframe {
 }
 
 .form input {
-  padding: 12px;
+  padding: 9px 12px;
   border-radius: 4px;
   border: 2px solid #0a4e92;
   outline: none;

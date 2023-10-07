@@ -318,7 +318,7 @@ i {
 /* Section - 1 */
 
 .bg-img {
-  background-image: url(/cases_hero.jpg);
+  background-image: url("cases_hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
