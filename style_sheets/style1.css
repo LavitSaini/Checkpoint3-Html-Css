@@ -316,7 +316,7 @@ i {
 /* Section - 1 */
 
 .bg-image {
-  background-image: url(/images/media/hero/h1_hero.jpg);
+  background-image: url(/h1_hero.jpg);
   background-position: center;
   background-size: cover;
   height: 100%;
