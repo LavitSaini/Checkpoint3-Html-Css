@@ -248,9 +248,7 @@ strong {
 
 /* Custom Styles */
 
-/* Header Section */
-
-/* Header Bar Section */
+/* Bar Section */
 
 .bar {
   padding: 0.5rem 0rem;
@@ -274,11 +272,25 @@ i {
   margin-left: 1.1rem;
 }
 
+/* Header Section */
+
+.header{
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 /* Header Navigation-Bar Section */
 
 .navigation-bar {
   padding-top: 1.32rem;
   padding-bottom: 1.32rem;
+
+}
+
+.header-navbar .menu-btn, .header-navbar input{
+  display: none;
 }
 
 .logo img {
@@ -333,7 +345,7 @@ i {
 
 .sec-1-text h1 {
   max-width: 40%;
-  font-size: 2.9rem;
+  font-size: 2.8rem;
   color: var(--primary);
   font-weight: 900;
   line-height: 1.2;
@@ -357,6 +369,10 @@ i {
 
 .article img {
   width: 100%;
+}
+
+.section-2{
+  align-items: stretch;
 }
 
 .section-2 .article h4 {
@@ -439,7 +455,7 @@ i {
   margin-top: 2rem;
 }
 
-.service-box .box {
+.box {
   background-color: var(--bg);
   flex: 0 1 31.5%;
   padding: 2.4rem 1.5rem;
