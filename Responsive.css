@@ -355,3 +355,25 @@
     font-size: 8px;
   }
 }
+
+/* Height Breakpoints for Section 1 Background Image Responsiveness  */
+
+@media screen and (min-height: 1300px){
+  .section-1 {
+    min-height: 50vh;
+  }
+
+  .bg-image {
+    background-position: center;
+  }
+}
+
+@media screen and (max-height: 1300px){
+  .section-1 {
+    min-height: 60vh;
+  }
+
+  .bg-image {
+    background-position: center;
+  }
+}
