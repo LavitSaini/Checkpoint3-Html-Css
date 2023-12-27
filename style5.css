@@ -162,8 +162,8 @@ a {
 }
 
 strong {
-  color: #fff;
-  font-size: 1.4rem;
+  color: #fd656b;
+  font-size: 0.75rem;
   font-weight: 600;
 }
 
@@ -708,11 +708,11 @@ i {
 
 .footer-end {
   text-align: center;
-  margin: 1.5rem 0rem;
+  padding: 1.5rem 0rem;
 }
 
 .footer-end span {
-  font-size: 11px;
+  font-size: 0.7rem;
   color: var(--text-light);
   font-weight: 500;
 }

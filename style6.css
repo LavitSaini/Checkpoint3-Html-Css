@@ -392,6 +392,7 @@ iframe {
   border: 1px solid #d4d4d4;
   padding: 1rem 0.75rem;
   border-radius: 4px;
+  font-size: 0.8rem;
 }
 
 .form-box input::placeholder, textarea::placeholder{
@@ -481,6 +482,7 @@ iframe {
   border: 2px solid #0a4e92;
   outline: none;
   background-color: transparent;
+  font-size: 0.8rem;
 }
 
 .form input::placeholder {
@@ -578,7 +580,7 @@ iframe {
 
 .footer-end {
   text-align: center;
-  margin: 1.5rem 0rem;
+  padding: 1.5rem 0rem;
 }
 
 .footer-end span {
