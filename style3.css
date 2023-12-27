@@ -12,8 +12,11 @@
   box-sizing: border-box;
 }
 
-body {
+html{
   font-size: 16px;
+}
+
+body {
   font-family: "Poppins", sans-serif;
   line-height: 1.4;
 }
@@ -62,7 +65,6 @@ input {
   border: 1px solid #b0b0b0;
   padding: 3px 5px 4px;
   color: #979797;
-  width: 190px;
 }
 address,
 caption,
@@ -118,7 +120,7 @@ acronym {
 .container-1 {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 2rem;
 }
 
 .container-2 {
@@ -129,7 +131,7 @@ acronym {
 .container-3 {
   max-width: 830px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 2rem;
 }
 
 /* flex Classes */
@@ -162,13 +164,13 @@ a {
 
 strong {
   color: var(--secondary);
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 
 /* Button Classes */
 
 .btn-1 {
-  padding: 10px 20px;
+  padding: 0.65rem 1.25rem;
   background-color: var(--secondary);
   color: #fff;
   border-radius: 4px;
@@ -183,12 +185,12 @@ strong {
 }
 
 .btn-2 {
-  padding: 10px 20px;
+  padding: 0.65rem 1.25rem;
   border: 2px solid var(--secondary);
   background-color: transparent;
   color: var(--secondary);
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
@@ -203,12 +205,12 @@ strong {
 
 .small-heading {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.1rem;
   color: var(--dark);
 }
 
 .heading {
-  font-size: 28px;
+  font-size: 1.75rem;
   color: var(--dark);
   font-weight: 700;
   letter-spacing: -0.5px;
@@ -217,7 +219,7 @@ strong {
 }
 
 .big-heading {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--dark);
   text-align: center;
@@ -226,7 +228,7 @@ strong {
 /* Paragraph Classes */
 
 .paragraph {
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.7;
   color: var(--text);
 }
@@ -244,24 +246,22 @@ strong {
 /* Padding Top Bottom for Sections */
 
 .padding-top-bottom {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
 }
 
 /* Custom Styles */
 
-/* Header Section */
-
 /* Header Bar Section */
 
 .bar {
-  padding: 8px 0px;
+  padding: 0.5rem 0px;
 }
 
 .header-bar span,
 i {
   color: #fff;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .bar-child-1 {
@@ -273,24 +273,34 @@ i {
 }
 
 .bar-links a {
-  margin-left: 18px;
+  margin-left: 1.1rem;
+}
+
+/* Header Section */
+
+.header{
+  position: sticky;
+  top: -1px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 3;
 }
 
 /* Header Navigation-Bar Section */
 
 .navigation-bar {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
 }
 
 .logo img {
-  width: 80px;
+  width: 5rem;
 }
 
 .header-navbar a {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
-  margin-left: 28px;
+  margin-left: 1.75rem;
   color: var(--primary);
   text-transform: uppercase;
 }
@@ -303,13 +313,18 @@ i {
 
 .header-navbar .nav-btn {
   color: #fff;
-  margin-left: 36px;
+  margin-left: 2.25rem;
 }
 
 .header-navbar .active {
   color: var(--secondary);
   border-bottom: 2px solid var(--secondary);
 }
+
+.header-navbar .menu-btn, .header-navbar input{
+  display: none;
+}
+
 
 /* Section - 1 */
 
@@ -320,59 +335,60 @@ i {
 }
 
 .section-1 {
-  height: 300px;
+  min-height: 15rem;
 }
 
 .section-1 h3 {
   color: #fff;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 /* Section - 2 */
 .section-2 {
-  padding-top: 136px;
-  padding-bottom: 38px;
+  padding-top: 6.25rem;
 }
 
 .service-box {
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 
-.service-box .box {
+.box {
   background-color: var(--bg);
   flex: 0 1 31.5%;
-  padding: 38px 24px;
+  padding:2.4rem 1.5rem;
   text-align: center;
 }
 
 .service-box .box i {
-  font-size: 32px;
+  font-size: 2rem;
   color: var(--dark);
 }
 
 .service-box .box h4 {
-  margin-top: 24px;
-  margin-bottom: 16px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .service-box .box p {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--text);
   font-weight: 500;
 }
 
 .service-button {
-  padding: 70px 0px;
+  padding: 4.4rem 0rem;
 }
 
 /* Section - 3 */
 
 .section-3 {
-  padding-bottom: 136px;
+  padding-bottom: 6.25rem;
+  padding-top: 6.25rem;
+  background-color: #f8fafe;
 }
 
 .article-section {
-  margin-top: 60px;
+  margin-top: 3.7rem;
 }
 
 .sec-3-article {
@@ -384,24 +400,24 @@ i {
 }
 
 .news-info {
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
 }
 
 .news-info .red-para {
-  font-size: 10px;
+  font-size: 0.65rem;
   color: var(--secondary);
   font-weight: 500;
 }
 
 .news-info h5 {
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 500;
-  margin-top: 16px;
-  margin-bottom: 6px;
+  margin-top: 1rem;
+  margin-bottom: 0.45rem;
 }
 
 .news-info p {
-  font-size: 11px;
+  font-size: 0.7rem;
   font-weight: 500;
   color: var(--text-light);
 }
@@ -409,8 +425,8 @@ i {
 /* Section - 4 */
 
 .section-4 {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 4.4rem;
+  padding-bottom: 4.4rem;
   align-items: flex-start;
 }
 
@@ -420,12 +436,12 @@ i {
 
 .sec-4-text h3 {
   color: #fff;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .sec-4-text p {
   color: #fff;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.7;
 }
 
@@ -443,7 +459,7 @@ i {
 }
 
 .form input {
-  padding: 9px 12px;
+  padding: 0.6rem 0.75rem;
   border-radius: 4px;
   border: 2px solid #0a4e92;
   outline: none;
@@ -452,7 +468,7 @@ i {
 
 .form input::placeholder {
   color: #fff;
-  font-size: 13px;
+  font-size: 0.8rem;
   letter-spacing: 0.5px;
   font-family: "Poppins", sans-serif;
 }
@@ -466,9 +482,9 @@ i {
   display: inline-block;
   text-align: center;
   width: 32%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 11px;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  font-size: 0.7rem;
 }
 
 .margin-right {
@@ -483,8 +499,8 @@ i {
 
 .footer-start {
   align-items: flex-start;
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding-top: 6.25rem;
+  padding-bottom: 3.75rem;
 }
 
 .foot-text {
@@ -492,19 +508,19 @@ i {
 }
 
 .footer-logo img {
-  width: 120px;
+  width: 7.5rem;
 }
 
 .foot-text p {
   font-weight: 500;
   color: var(--text-light);
-  margin: 24px 0px;
+  margin: 1.5rem 0rem;
 }
 
 .foot-text ul i {
   color: #2e2e2e;
-  font-size: 14px;
-  margin-right: 10px;
+  font-size: 0.9rem;
+  margin-right: 0.65rem;
 }
 
 .footer-links {
@@ -519,16 +535,16 @@ i {
 .links-section h6 {
   color: var(--primary);
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .links-section ul li {
-  margin: 6px 0px;
+  margin: 0.4rem 0rem;
 }
 
 .links-section ul a {
   color: var(--text-light);
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
@@ -545,11 +561,11 @@ i {
 
 .footer-end {
   text-align: center;
-  margin: 24px 0px;
+  margin: 1.5rem 0rem;
 }
 
 .footer-end span {
-  font-size: 11px;
+  font-size: 0.7rem;
   color: var(--text-light);
   font-weight: 500;
 }

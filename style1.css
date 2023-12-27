@@ -276,9 +276,10 @@ i {
 
 .header{
   position: sticky;
-  top: 0px;
+  top: -1px;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 3;
 }
 
 /* Header Navigation-Bar Section */
@@ -485,8 +486,8 @@ i {
 /* Section - 5 */
 
 .section-5 {
-  padding-top: 8.5rem;
-  padding-bottom: 8rem;
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
 }
 
 /* Section - 5 (Child - 1)*/
@@ -557,7 +558,7 @@ i {
 /* Section - 7 */
 
 .section-7 {
-  padding-bottom: 8.5rem;
+  padding-bottom: 6.25rem;
 }
 
 .article-section {
@@ -672,8 +673,8 @@ i {
 
 .footer-start {
   align-items: flex-start;
-  padding-top: 6.3rem;
-  padding-bottom: 3.8rem;
+  padding-top: 6.25rem;
+  padding-bottom: 3.75rem;
 }
 
 .foot-text {
@@ -712,7 +713,7 @@ i {
 }
 
 .links-section ul li {
-  margin: 0.4rem 0px;
+  margin: 0.4rem 0rem;
 }
 
 .links-section ul a {

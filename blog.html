@@ -7,6 +7,7 @@
 
     <!-- Style Sheet -->
     <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="Responsive5.css">
 
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/8a2cca48dc.js" crossorigin="anonymous"></script>
@@ -14,47 +15,56 @@
 </head>
 
 <body>
+    <!-- Bar Section -->
+
+    <div class="bg-blue bar">
+        <div class="header-bar container-1 flex flex-wrap-vsm">
+            <div class="address bar-child-1 flex-100-vsm text-align-center-vsm">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                    65/A, 17th floor, Kings land, New York
+                </span>
+            </div>
+
+            <div class="bar-child-2 flex-space-between flex-100-vsm">
+                <div class="email flex-50-vsm text-align-center-vsm">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>info@consulting.com</span>
+                </div>
+
+                <ul class="flex bar-links flex-50-vsm">
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <!-- Header Section -->
 
     <header class="header">
-        <div class="bg-blue bar">
-            <div class="header-bar container-1 flex">
-                <div class="address bar-child-1">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span>
-                        65/A, 17th floor, Kings land, New York
-                    </span>
-                </div>
-
-                <div class="bar-child-2 flex-space-between">
-                    <div class="email">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <span>info@consulting.com</span>
-                    </div>
-
-                    <ul class="flex bar-links">
-                        <li>
-                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
         <div class="navigation-bar container-1 flex-space-between">
             <a href="index.html" class="logo"><img src="images/media/logo/logo.png" alt="header-logo-Image"></a>
 
             <nav class="header-navbar">
-                <ul class="flex">
+ 
+                <label for="toggle" class="menu-btn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </label>
+                <input type="checkbox" id="toggle">
+
+                <ul class="nav-links flex">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
@@ -67,404 +77,416 @@
         </div>
     </header>
 
-    <!-- Section - 1 -->
+    <!-- Main Section -->
 
-    <div class="bg-img">
-        <section class="section-1 container-3 flex-center">
-            <h3 class="heading">Our Blog</h3>
-        </section>
-    </div>
+    <main>
 
-    <!-- Section - 2 -->
+        <!-- Section - 1 -->
 
-    <section class="section-2 container-3 flex-space-between flex-wrap padding-top-bottom">
-
-        <div class="article-section sec-2-child-1">
-
-            <article class="article">
-
-                <div class="article-img">
-                    <img src="images/media/blog/blog_1.png" alt="Blog Image-1">
-                </div>
-
-                <div class="article-content">
-                    <span class="date"><strong>15</strong> Jan</span>
-                    <h4>
-                        Google inks pact for new 35-storey office
-                    </h4>
-                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it
-                        first without heaven in place seed it second morning saying.</p>
-                    <div class="icons">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-
-                        <span>Travel, Lifestyle</span>
-
-                        <span class="stick"> | </span>
-
-                        <i class="fa fa-comments" aria-hidden="true"></i>
-
-                        <span>03 Comments</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="article">
-                <div class="article-img">
-                    <img src="images/media/blog/blog_2.png" alt="Blog Image-2">
-                </div>
-
-                <div class="article-content">
-                    <span class="date"><strong>15</strong> Jan</span>
-                    <h4>
-                        Google inks pact for new 35-storey office
-                    </h4>
-                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it
-                        first without heaven in place seed it second morning saying.</p>
-                    <div class="icons">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-
-                        <span>Travel, Lifestyle</span>
-
-                        <span> | </span>
-
-                        <i class="fa fa-comments" aria-hidden="true"></i>
-
-                        <span>03 Comments</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="article">
-                <div class="article-img">
-                    <img src="images/media/blog/blog_3.png" alt="Blog Image-3">
-                </div>
-
-                <div class="article-content">
-                    <span class="date"><strong>15</strong> Jan</span>
-                    <h4>
-                        Google inks pact for new 35-storey office
-                    </h4>
-                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it
-                        first without heaven in place seed it second morning saying.</p>
-                    <div class="icons">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-
-                        <span>Travel, Lifestyle</span>
-
-                        <span> | </span>
-
-                        <i class="fa fa-comments" aria-hidden="true"></i>
-
-                        <span>03 Comments</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="article">
-                <div class="article-img">
-                    <img src="images/media/blog/blog_4.png" alt="Blog Image-4">
-                </div>
-
-                <div class="article-content">
-                    <span class="date"><strong>15</strong> Jan</span>
-                    <h4>
-                        Google inks pact for new 35-storey office
-                    </h4>
-                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it
-                        first without heaven in place seed it second morning saying.</p>
-                    <div class="icons">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-
-                        <span>Travel, Lifestyle</span>
-
-                        <span> | </span>
-
-                        <i class="fa fa-comments" aria-hidden="true"></i>
-
-                        <span>03 Comments</span>
-                    </div>
-                </div>
-            </article>
-
-            <article class="article">
-                <div class="article-img">
-                    <img src="images/media/blog/blog_5.png" alt="Blog Image-5">
-                </div>
-
-                <div class="article-content">
-                    <span class="date"><strong>15</strong> Jan</span>
-                    <h4>
-                        Google inks pact for new 35-storey office
-                    </h4>
-                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it
-                        first without heaven in place seed it second morning saying.</p>
-                    <div class="icons">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-
-                        <span>Travel, Lifestyle</span>
-
-                        <span> | </span>
-
-                        <i class="fa fa-comments" aria-hidden="true"></i>
-
-                        <span>03 Comments</span>
-                    </div>
-                </div>
-            </article>
+        <div class="bg-img">
+            <section class="section-1 container-3 flex-center">
+                <h3 class="heading">Our Blog</h3>
+            </section>
         </div>
 
-        <div class="side-bar-section sec-2-child-2">
+        <!-- Section - 2 -->
 
-            <aside class="side-bar side-bar-1">
-                <div class="search-box flex">
-                    <input type="search" placeholder="Search Keyword">
-                    <a href="#" class="btn-1 search"><i class="fa fa-search" aria-hidden="true"></i></a>
-                </div>
-                <a href="#" class="btn-2 search-btn">SEARCH</a>
-            </aside>
+        <section class="section-2 container-3 flex-space-between flex-wrap padding-top-bottom">
 
-            <aside class="side-bar side-bar-2">
-                <h5>Category</h5>
+            <div class="article-section sec-2-child-1 flex-100-sm">
 
-                <div class="category-list">
-                    <p>Resaurant food(37)</p>
-                    <p>Travel news(10)</p>
-                    <p>Modern technology(03)</p>
-                    <p>Product(11)</p>
-                    <p>Inspiration21</p>
-                    <p class="no-border">Health Care(21)09</p>
-                </div>
-            </aside>
+                <article class="article">
 
-            <aside class="side-bar side-bar-3">
-                <h5>Recent Post</h5>
-
-                <div class="posts-list">
-                    <div class="posts flex-space-between">
-                        <div class="post-img">
-                            <img src="images/media/posts/post_1.png" alt="Post-Image-2">
-                        </div>
-
-                        <div class="post-timing">
-                            <h6>
-                                From life was you fish...</h6>
-                            <p>January 12, 2019</p>
-                        </div>
+                    <div class="article-img">
+                        <img src="images/media/blog/blog_1.png" alt="Blog Image-1">
                     </div>
 
-                    <div class="posts flex-space-between">
-                        <div class="post-img">
-                            <img src="images/media/posts/post_2.png" alt="Post-Image-2">
-                        </div>
+                    <div class="article-content">
+                        <span class="date"><strong>15</strong> Jan</span>
+                        <h4>
+                            Google inks pact for new 35-storey office
+                        </h4>
+                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth
+                            it
+                            first without heaven in place seed it second morning saying.</p>
+                        <div class="icons">
+                            <i class="fa fa-user" aria-hidden="true"></i>
 
-                        <div class="post-timing">
-                            <h6>The Amazing Hubble</h6>
-                            <p>02 Hours ago</p>
+                            <span>Travel, Lifestyle</span>
+
+                            <span class="stick"> | </span>
+
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+
+                            <span>03 Comments</span>
                         </div>
                     </div>
+                </article>
 
-                    <div class="posts flex-space-between">
-                        <div class="post-img">
-                            <img src="images/media/posts/post_3.png" alt="Post-Image-3">
+                <article class="article">
+                    <div class="article-img">
+                        <img src="images/media/blog/blog_2.png" alt="Blog Image-2">
+                    </div>
+
+                    <div class="article-content">
+                        <span class="date"><strong>15</strong> Jan</span>
+                        <h4>
+                            Google inks pact for new 35-storey office
+                        </h4>
+                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth
+                            it
+                            first without heaven in place seed it second morning saying.</p>
+                        <div class="icons">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+
+                            <span>Travel, Lifestyle</span>
+
+                            <span> | </span>
+
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+
+                            <span>03 Comments</span>
                         </div>
+                    </div>
+                </article>
 
-                        <div class="post-timing">
-                            <h6>
-                                Astronomy Or Astrology
+                <article class="article">
+                    <div class="article-img">
+                        <img src="images/media/blog/blog_3.png" alt="Blog Image-3">
+                    </div>
+
+                    <div class="article-content">
+                        <span class="date"><strong>15</strong> Jan</span>
+                        <h4>
+                            Google inks pact for new 35-storey office
+                        </h4>
+                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth
+                            it
+                            first without heaven in place seed it second morning saying.</p>
+                        <div class="icons">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+
+                            <span>Travel, Lifestyle</span>
+
+                            <span> | </span>
+
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+
+                            <span>03 Comments</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article">
+                    <div class="article-img">
+                        <img src="images/media/blog/blog_4.png" alt="Blog Image-4">
+                    </div>
+
+                    <div class="article-content">
+                        <span class="date"><strong>15</strong> Jan</span>
+                        <h4>
+                            Google inks pact for new 35-storey office
+                        </h4>
+                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth
+                            it
+                            first without heaven in place seed it second morning saying.</p>
+                        <div class="icons">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+
+                            <span>Travel, Lifestyle</span>
+
+                            <span> | </span>
+
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+
+                            <span>03 Comments</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article">
+                    <div class="article-img">
+                        <img src="images/media/blog/blog_5.png" alt="Blog Image-5">
+                    </div>
+
+                    <div class="article-content">
+                        <span class="date"><strong>15</strong> Jan</span>
+                        <h4>
+                            Google inks pact for new 35-storey office
+                        </h4>
+                        <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth
+                            it
+                            first without heaven in place seed it second morning saying.</p>
+                        <div class="icons">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+
+                            <span>Travel, Lifestyle</span>
+
+                            <span> | </span>
+
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+
+                            <span>03 Comments</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="side-bar-section sec-2-child-2 flex-100-sm">
+
+                <aside class="side-bar side-bar-1">
+                    <div class="search-box flex">
+                        <input type="search" placeholder="Search Keyword">
+                        <a href="#" class="btn-1 search"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    </div>
+                    <a href="#" class="btn-2 search-btn">SEARCH</a>
+                </aside>
+
+                <aside class="side-bar side-bar-2">
+                    <h5>Category</h5>
+
+                    <div class="category-list">
+                        <p>Resaurant food(37)</p>
+                        <p>Travel news(10)</p>
+                        <p>Modern technology(03)</p>
+                        <p>Product(11)</p>
+                        <p>Inspiration21</p>
+                        <p class="no-border">Health Care(21)09</p>
+                    </div>
+                </aside>
+
+                <aside class="side-bar side-bar-3">
+                    <h5>Recent Post</h5>
+
+                    <div class="posts-list">
+                        <div class="posts flex-space-between align-items-start-sm">
+                            <div class="post-img">
+                                <img src="images/media/posts/post_1.png" alt="Post-Image-2">
+                            </div>
+
+                            <div class="post-timing">
                                 <h6>
-                                    <p>03 Hours ago</p>
-                        </div>
-                    </div>
-
-                    <div class="posts flex-space-between">
-                        <div class="post-img">
-                            <img src="images/media/posts/post_4.png" alt="Post-Image-4">
+                                    From life was you fish...</h6>
+                                <p>January 12, 2019</p>
+                            </div>
                         </div>
 
-                        <div class="post-timing">
-                            <h6>
-                                Asteroids telescope
-                            </h6>
-                            <p>01 Hours ago</p>
+                        <div class="posts flex-space-between align-items-start-sm">
+                            <div class="post-img">
+                                <img src="images/media/posts/post_2.png" alt="Post-Image-2">
+                            </div>
+
+                            <div class="post-timing">
+                                <h6>The Amazing Hubble</h6>
+                                <p>02 Hours ago</p>
+                            </div>
+                        </div>
+
+                        <div class="posts flex-space-between align-items-start-sm">
+                            <div class="post-img">
+                                <img src="images/media/posts/post_3.png" alt="Post-Image-3">
+                            </div>
+
+                            <div class="post-timing">
+                                <h6>
+                                    Astronomy Or Astrology
+                                    <h6>
+                                        <p>03 Hours ago</p>
+                            </div>
+                        </div>
+
+                        <div class="posts flex-space-between align-items-start-sm">
+                            <div class="post-img">
+                                <img src="images/media/posts/post_4.png" alt="Post-Image-4">
+                            </div>
+
+                            <div class="post-timing">
+                                <h6>
+                                    Asteroids telescope
+                                </h6>
+                                <p>01 Hours ago</p>
+                            </div>
                         </div>
                     </div>
+                </aside>
+
+                <aside class="side-bar side-bar-4">
+                    <h5>Tag Clouds</h5>
+
+                    <div class="cloud-links">
+                        <span>Project</span>
+                        <span>love</span>
+                        <span>technology</span>
+                        <span>travel</span>
+                        <span>restaurant</span>
+                        <span>life style</span>
+                        <span>design</span>
+                        <span>illustration</span>
+                    </div>
+                </aside>
+
+                <aside class="side-bar side-bar-5">
+                    <h5>Instagram Feeds</h5>
+
+                    <div class="feed-gallery flex-space-between flex-wrap">
+                        <div class="feed-img">
+                            <img src="images/media/posts/post_5.png" alt="Instagram feed Image-1">
+                        </div>
+
+                        <div class="feed-img">
+                            <img src="images/media/posts/post_6.png" alt="Instagram feed Image-2">
+                        </div>
+
+                        <div class="feed-img">
+                            <img src="images/media/posts/post_7.png" alt="Instagram feed Image-3">
+                        </div>
+
+                        <div class="feed-img">
+                            <img src="images/media/posts/post_8.png" alt="Instagram feed Image-4">
+                        </div>
+
+                        <div class="feed-img">
+                            <img src="images/media/posts/post_9.png" alt="Instagram feed Image-5">
+                        </div>
+
+                        <div class="feed-img">
+                            <img src="images/media/posts/post_10.png" alt="Instagram feed Image-6">
+                        </div>
+
+                    </div>
+                </aside>
+
+                <aside class="side-bar side-bar-6">
+                    <h5>Newsletter</h5>
+
+                    <div class="subscribe">
+                        <input type="email" placeholder="Enter email">
+
+                        <a href="#" class="btn-2 sub-btn">SUBSCRIBE</a>
+                    </div>
+                </aside>
+
+            </div>
+
+            <div class="pages sec-2-child-3">
+                <ul class="flex-center">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">2</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+  <!-- footer Section -->
+
+  <div class="bg-color">
+    <footer class="footer container-3">
+        <div class="footer-start flex-space-between flex-wrap-sm">
+            <div class="foot-text flex-100-sm">
+                <div class="footer-logo"><img src="images/media/logo/logo2_footer.png" alt="footer-logo-Image">
                 </div>
-            </aside>
 
-            <aside class="side-bar side-bar-4">
-                <h5>Tag Clouds</h5>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
-                <div class="cloud-links">
-                    <span>Project</span>
-                    <span>love</span>
-                    <span>technology</span>
-                    <span>travel</span>
-                    <span>restaurant</span>
-                    <span>life style</span>
-                    <span>design</span>
-                    <span>illustration</span>
-                </div>
-            </aside>
+                <ul class="flex">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
 
-            <aside class="side-bar side-bar-5">
-                 <h5>Instagram Feeds</h5>
-
-                 <div class="feed-gallery flex-space-between flex-wrap">
-                    <div class="feed-img">
-                        <img src="images/media/posts/post_5.png" alt="Instagram feed Image-1">
-                    </div>
-
-                    <div class="feed-img">
-                        <img src="images/media/posts/post_6.png" alt="Instagram feed Image-2">
-                    </div>
-
-                    <div class="feed-img">
-                        <img src="images/media/posts/post_7.png" alt="Instagram feed Image-3">
-                    </div>
-
-                    <div class="feed-img">
-                        <img src="images/media/posts/post_8.png" alt="Instagram feed Image-4">
-                    </div>
-
-                    <div class="feed-img">
-                        <img src="images/media/posts/post_9.png" alt="Instagram feed Image-5">
-                    </div>
-
-                    <div class="feed-img">
-                        <img src="images/media/posts/post_10.png" alt="Instagram feed Image-6">
-                    </div>
-
-                 </div>
-            </aside>
-
-            <aside class="side-bar side-bar-6">
-                <h5>Newsletter</h5>
-
-                <div class="subscribe">
-                    <input type="email" placeholder="Enter email">
-
-                    <a href="#" class="btn-2 sub-btn">SUBSCRIBE</a>
-                </div>
-            </aside>
-
-        </div>
-
-        <div class="pages sec-2-child-3">
-            <ul class="flex-center">
-                <li>
-                    <a href="#">
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">1</a>
-                </li>
-                <li>
-                    <a href="#" class="active">2</a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- footer Section -->
-    <div class="bg-color">
-        <footer class="footer container-3">
-            <div class="footer-start flex-space-between">
-                <div class="foot-text">
-                    <div class="footer-logo"><img src="images/media/logo/logo2_footer.png" alt="footer-logo-Image">
-                    </div>
-
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-                    <ul class="flex">
+            <div class="footer-links flex-space-between flex-wrap-sm flex-wrap-vsm">
+                <div class="links-section flex-50-vsm">
+                    <h6>Comapny</h6>
+                    <ul>
                         <li>
-                            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                            <a href="#">About Us</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            <a href="#">Services</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+                            <a href="#">Cases</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="footer-links flex-space-between">
-                    <div class="links-section">
-                        <h6>Comapny</h6>
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#">Services</a>
-                            </li>
-                            <li>
-                                <a href="#">Cases</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="links-section flex-50-vsm">
+                    <h6>Services</h6>
+                    <ul>
+                        <li>
+                            <a href="#">Commerical Cleaning</a>
+                        </li>
+                        <li>
+                            <a href="#">Office Cleaning</a>
+                        </li>
+                        <li>
+                            <a href="#">Building Cleaning</a>
+                        </li>
+                        <li>
+                            <a href="#">Floor Cleaning</a>
+                        </li>
+                        <li>
+                            <a href="#">Apartment Clearing</a>
+                        </li>
+                    </ul>
+                </div>
 
-                    <div class="links-section">
-                        <h6>Services</h6>
-                        <ul>
-                            <li>
-                                <a href="#">Commerical Cleaning</a>
-                            </li>
-                            <li>
-                                <a href="#">Office Cleaning</a>
-                            </li>
-                            <li>
-                                <a href="#">Building Cleaning</a>
-                            </li>
-                            <li>
-                                <a href="#">Floor Cleaning</a>
-                            </li>
-                            <li>
-                                <a href="#">Apartment Clearing</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="links-section">
-                        <h6>Get In Touch</h6>
-                        <ul>
-                            <li>
-                                <a href="#">152-515-6565</a>
-                            </li>
-                            <li>
-                                <a href="#">Demomail@gmail.com</a>
-                            </li>
-                            <li>
-                                <a href="#">New Orleans, USA</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="links-section flex-50-vsm margin-top-vsm">
+                    <h6>Get In Touch</h6>
+                    <ul>
+                        <li>
+                            <a href="#">152-515-6565</a>
+                        </li>
+                        <li>
+                            <a href="#">Demomail@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#">New Orleans, USA</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </div>
 
-            <div class="footer-line"></div>
+        <div class="footer-line"></div>
 
-            <div class="footer-end">
-                <span>Copyright &copy; 2020 All rights reserved | This template is made by <strong class="footer-strong-text">Lavit
-                        Saini</strong></span>
-            </div>
-        </footer>
-    </div>
+        <div class="footer-end">
+            <span>Copyright &copy; 2020 All rights reserved | This template is made by <strong>Lavit
+                    Saini</strong></span>
+        </div>
+    </footer>
+</div>
 </body>
 
 </html>

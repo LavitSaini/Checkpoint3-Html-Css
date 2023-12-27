@@ -12,8 +12,11 @@
   box-sizing: border-box;
 }
 
-body {
+html{
   font-size: 16px;
+}
+
+body {
   font-family: "Poppins", sans-serif;
   line-height: 1.4;
 }
@@ -62,7 +65,6 @@ input {
   border: 1px solid #b0b0b0;
   padding: 3px 5px 4px;
   color: #979797;
-  width: 190px;
 }
 address,
 caption,
@@ -118,18 +120,13 @@ acronym {
 .container-1 {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 0 32px;
-}
-
-.container-2 {
-  max-width: 80%;
-  margin-left: 20%;
+  padding: 0 2rem;
 }
 
 .container-3 {
-  max-width: 830px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 2rem;
 }
 
 /* flex Classes */
@@ -166,14 +163,14 @@ a {
 
 strong {
   color: #fff;
-  font-size: 22px;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
 /* Button Classes */
 
 .btn-1 {
-  padding: 10px 20px;
+  padding: 0.65rem 1.25rem;
   background-color: var(--secondary);
   color: #fff;
   border-radius: 4px;
@@ -188,12 +185,12 @@ strong {
 }
 
 .btn-2 {
-  padding: 10px 20px;
+  padding: 0.65rem 1.25rem;
   border: 2px solid var(--secondary);
   background-color: transparent;
   color: var(--secondary);
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
@@ -208,12 +205,12 @@ strong {
 
 .small-heading {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.1rem;
   color: var(--dark);
 }
 
 .heading {
-  font-size: 28px;
+  font-size: 1.75rem;
   color: var(--dark);
   font-weight: 700;
   letter-spacing: -0.5px;
@@ -222,7 +219,7 @@ strong {
 }
 
 .big-heading {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--dark);
   text-align: center;
@@ -231,7 +228,7 @@ strong {
 /* Paragraph Classes */
 
 .paragraph {
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.7;
   color: var(--text);
 }
@@ -249,24 +246,21 @@ strong {
 /* Padding Top Bottom for Sections */
 
 .padding-top-bottom {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 6.25rem;
 }
 
 /* Custom Styles */
 
-/* Header Section */
-
 /* Header Bar Section */
 
 .bar {
-  padding: 8px 0px;
+  padding: 0.5rem 0rem;
 }
 
 .header-bar span,
 i {
   color: #fff;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .bar-child-1 {
@@ -278,24 +272,34 @@ i {
 }
 
 .bar-links a {
-  margin-left: 18px;
+  margin-left: 1.1rem;
+}
+
+/* Header Section */
+
+.header{
+  position: sticky;
+  top: -1px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 3;
 }
 
 /* Header Navigation-Bar Section */
 
 .navigation-bar {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
 }
 
 .logo img {
-  width: 80px;
+  width: 5rem;
 }
 
 .header-navbar a {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
-  margin-left: 28px;
+  margin-left: 1.75rem;
   color: var(--primary);
   text-transform: uppercase;
 }
@@ -308,12 +312,17 @@ i {
 
 .header-navbar .nav-btn {
   color: #fff;
-  margin-left: 36px;
+  margin-left: 2.25rem;
 }
 
 .header-navbar .active {
   color: var(--secondary);
   border-bottom: 2px solid var(--secondary);
+}
+
+.header-navbar .menu-btn,
+.header-navbar input {
+  display: none;
 }
 
 /* Section - 1 */
@@ -325,12 +334,12 @@ i {
 }
 
 .section-1 {
-  height: 300px;
+  min-height: 15rem;
 }
 
 .section-1 h3 {
   color: #fff;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 /* Section - 2 */
@@ -356,11 +365,11 @@ i {
 .article {
   margin-bottom: 5%;
   background-color: #fff;
-  box-shadow: 1px 1px 10px 0px rgba(33, 35, 38, 0.1);
+  box-shadow: 1px 1px 0.65rem 0px rgba(33, 35, 38, 0.1);
 }
 
 .article-content {
-  padding: 22px 28px;
+  padding: 1.4rem 1.75rem;
   position: relative;
 }
 
@@ -374,9 +383,9 @@ i {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 10px 0px;
+  padding: 0.65rem 0rem;
   position: absolute;
-  font-size: 13px;
+  font-size: 0.8rem;
   color: #fff;
   border-radius: 4px;
   font-weight: 500;
@@ -384,36 +393,36 @@ i {
 }
 
 .article-content h4 {
-  font-size: 19px;
+  font-size: 1.2rem;
   font-weight: 600;
-  margin-top: 16px;
+  margin-top: 1rem;
   color: var(--dark);
 }
 
 .article-content p {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
   color: var(--text);
-  margin-top: 10px;
-  margin-bottom: 16px;
+  margin-top: 0.65rem;
+  margin-bottom: 1rem;
   line-height: 1.6;
 }
 
 .article-content .icons i {
   color: var(--text-light);
-  font-size: 12px;
+  font-size: 0.75rem;
   margin-right: 3px;
 }
 
 .article-content .icons span {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
   color: var(--text-light);
 }
 
 .article-content .icons .stick {
   color: var(--text);
-  font-size: 14px;
+  font-size: 0.9rem;
   margin: 0px 3px;
 }
 
@@ -421,14 +430,14 @@ i {
 
 .side-bar {
   background-color: var(--bg);
-  margin-bottom: 24px;
-  padding: 16px 24px;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .side-bar h5 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  padding: 10px 0px;
+  padding: 0.65rem 0px;
   border-bottom: 1px solid #d5d5d5;
   color: var(--dark);
 }
@@ -436,11 +445,11 @@ i {
 /* Side-bar-1 Stlyes */
 
 .side-bar-1 {
-  padding: 28px 24px;
+  padding: 1.75rem 1.5rem;
 }
 
 .search-box {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .search-box input {
@@ -448,18 +457,18 @@ i {
   border-right: none;
   outline: none;
   flex-grow: 1;
-  padding: 14px 10px;
+  padding: 0.9rem 0.65rem;
 }
 
 .search-box input[type="search"] {
-  font-size: 13px;
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--secondary);
   letter-spacing: 1px;
 }
 
 .search-box input::placeholder {
-  padding: 6px 0px;
+  padding: 0.4rem 0rem;
   color: var(--secondary);
   font-weight: 500;
   letter-spacing: 1px;
@@ -467,7 +476,7 @@ i {
 
 .search-box .search {
   border-radius: 0px;
-  padding: 12px 10px;
+  padding: 0.75rem 0.65rem;
   display: flex;
   align-items: center;
 }
@@ -480,8 +489,8 @@ i {
 .search-btn {
   display: flex;
   justify-content: center;
-  padding: 12px 0px;
-  font-size: 13px;
+  padding: 0.75rem 0rem;
+  font-size: 0.8rem;
   letter-spacing: 2px;
   border-radius: 0px;
 }
@@ -493,10 +502,10 @@ i {
 }
 
 .category-list p {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--text);
   font-weight: 500;
-  padding: 13px 0px;
+  padding: 0.8rem 0rem;
   border-bottom: 1px solid #d5d5d5;
 }
 
@@ -507,11 +516,11 @@ i {
 /* Side-bar-3 Stlyes */
 
 .posts-list {
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 .posts {
-  margin-bottom: 18px;
+  margin-bottom: 1.1rem;
 }
 
 .post-img {
@@ -527,12 +536,12 @@ i {
 }
 
 .post-timing h6 {
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
 .post-timing p {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--text);
   font-weight: 500;
 }
@@ -540,25 +549,25 @@ i {
 /* Side-bar-4 Stlyes */
 
 .cloud-links {
-  margin-top: 36px;
+  margin-top: 2.25rem;
 }
 
 .cloud-links span {
   display: inline-block;
   background-color: #fff;
   color: var(--text-light);
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
-  padding: 6px 14px;
+  padding: 0.4rem 0.9rem;
   border: 1px solid #e0e0e0;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   margin-left: 4px;
 }
 
 /* Side-bar-5 Stlyes */
 
 .feed-gallery {
-  margin-top: 38px;
+  margin-top: 2.25rem;
 }
 
 .feed-img {
@@ -573,26 +582,26 @@ i {
 /* Side-bar-6 Stlyes */
 
 .subscribe {
-  margin-top: 36px;
+  margin-top: 2.25rem;
 }
 
 .subscribe input {
   border: 1px solid var(--secondary);
   outline: none;
-  padding: 12px 10px;
-  margin-bottom: 16px;
+  padding: 0.75rem 0.65rem;
+  margin-bottom: 1rem;
   width: 100%;
 }
 
 .subscribe input::placeholder {
-  font-size: 13px;
+  font-size: 0.8rem;
   color: var(--secondary);
   letter-spacing: 1px;
 }
 
 .subscribe input[type="email"] {
   color: var(--secondary);
-  font-size: 13px;
+  font-size: 0.8rem;
   letter-spacing: 1px;
 }
 
@@ -601,22 +610,22 @@ i {
   justify-content: center;
   border-radius: 0px;
   letter-spacing: 2px;
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 
 /* Pages Switch Box */
 
 .pages {
-  margin: 60px 0px;
+  margin: 3.75rem 0rem;
 }
 
 .pages ul a {
   display: flex;
-  padding: 10px 18px;
+  padding: 0.65rem 1.1rem;
   border: 1px solid #e0e0e0;
   color: var(--text);
-  font-size: 14px;
-  margin-right: 12px;
+  font-size: 0.9rem;
+  margin-right: 0.75rem;
 }
 
 .pages ul a:hover {
@@ -624,7 +633,7 @@ i {
 }
 
 .pages ul a i {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: var(--text);
   padding: 3px 0px;
 }
@@ -637,8 +646,8 @@ i {
 
 .footer-start {
   align-items: flex-start;
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding-top: 6.25rem;
+  padding-bottom: 3.75rem;
 }
 
 .foot-text {
@@ -646,19 +655,19 @@ i {
 }
 
 .footer-logo img {
-  width: 120px;
+  width: 7.5rem;
 }
 
 .foot-text p {
   font-weight: 500;
   color: var(--text-light);
-  margin: 24px 0px;
+  margin: 1.5rem 0rem;
 }
 
 .foot-text ul i {
   color: #2e2e2e;
-  font-size: 14px;
-  margin-right: 10px;
+  font-size: 0.9rem;
+  margin-right: 0.65rem;
 }
 
 .footer-links {
@@ -673,7 +682,7 @@ i {
 .links-section h6 {
   color: var(--primary);
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .links-section ul li {
@@ -682,7 +691,7 @@ i {
 
 .links-section ul a {
   color: var(--text-light);
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
@@ -699,7 +708,7 @@ i {
 
 .footer-end {
   text-align: center;
-  margin: 24px 0px;
+  margin: 1.5rem 0rem;
 }
 
 .footer-end span {
@@ -710,5 +719,5 @@ i {
 
 .footer-strong-text {
   color: var(--secondary);
-  font-size: 13px;
+  font-size: 0.8rem;
 }

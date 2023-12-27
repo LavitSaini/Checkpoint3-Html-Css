@@ -12,8 +12,11 @@
   box-sizing: border-box;
 }
 
-body {
+html{
   font-size: 16px;
+}
+
+body {
   font-family: "Poppins", sans-serif;
   line-height: 1.4;
 }
@@ -62,7 +65,6 @@ input {
   border: 1px solid #b0b0b0;
   padding: 3px 5px 4px;
   color: #979797;
-  width: 190px;
 }
 address,
 caption,
@@ -118,18 +120,13 @@ acronym {
 .container-1 {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 0 32px;
-}
-
-.container-2 {
-  max-width: 80%;
-  margin-left: 20%;
+  padding: 0 2rem;
 }
 
 .container-3 {
-  max-width: 830px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 0 32px;
+  padding: 0 2rem;
 }
 
 /* flex Classes */
@@ -166,7 +163,7 @@ a {
 
 strong {
   color: var(--secondary);
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 
 figure {
@@ -180,7 +177,7 @@ textarea{
 /* Button Classes */
 
 .btn-1 {
-  padding: 10px 20px;
+  padding: 0.65rem 1.25rem;
   background-color: var(--secondary);
   color: #fff;
   border-radius: 4px;
@@ -195,12 +192,12 @@ textarea{
 }
 
 .btn-2 {
-  padding: 10px 20px;
+  padding: 0.65rem 1.25rem;
   border: 2px solid var(--secondary);
   background-color: transparent;
   color: var(--secondary);
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
@@ -215,12 +212,12 @@ textarea{
 
 .small-heading {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.1rem;
   color: var(--dark);
 }
 
 .heading {
-  font-size: 28px;
+  font-size: 1.75rem;
   color: var(--dark);
   font-weight: 700;
   letter-spacing: -0.5px;
@@ -229,7 +226,7 @@ textarea{
 }
 
 .big-heading {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--dark);
   text-align: center;
@@ -238,7 +235,7 @@ textarea{
 /* Paragraph Classes */
 
 .paragraph {
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.7;
   color: var(--text);
 }
@@ -256,24 +253,22 @@ textarea{
 /* Padding Top Bottom for Sections */
 
 .padding-top-bottom {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 6.25rem;
+  padding-bottom: 4.4rem;
 }
 
 /* Custom Styles */
 
-/* Header Section */
-
 /* Header Bar Section */
 
 .bar {
-  padding: 8px 0px;
+  padding: 0.5rem 0rem;
 }
 
 .header-bar span,
 i {
   color: #fff;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .bar-child-1 {
@@ -285,24 +280,34 @@ i {
 }
 
 .bar-links a {
-  margin-left: 18px;
+  margin-left: 1.1rem;
+}
+
+/* Header Section */
+
+.header{
+  position: sticky;
+  top: -1px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 3;
 }
 
 /* Header Navigation-Bar Section */
 
 .navigation-bar {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
 }
 
 .logo img {
-  width: 80px;
+  width: 5rem;
 }
 
 .header-navbar a {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
-  margin-left: 28px;
+  margin-left: 1.75rem;
   color: var(--primary);
   text-transform: uppercase;
 }
@@ -315,12 +320,17 @@ i {
 
 .header-navbar .nav-btn {
   color: #fff;
-  margin-left: 36px;
+  margin-left: 2.25rem;
 }
 
 .header-navbar .active {
   color: var(--secondary);
   border-bottom: 2px solid var(--secondary);
+}
+
+.header-navbar .menu-btn,
+.header-navbar input {
+  display: none;
 }
 
 /* Section - 1 */
@@ -332,12 +342,12 @@ i {
 }
 
 .section-1 {
-  height: 300px;
+  min-height: 15rem;
 }
 
 .section-1 h3 {
   color: #fff;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 /* Section - 2 */
@@ -348,16 +358,16 @@ iframe {
 }
 
 .form-box {
-  margin-top: 50px;
+  margin-top: 3rem;
   align-items: flex-start;
 }
 
 .box-child-1 {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--primary);
   font-weight: 600;
   width: 100%;
-  margin: 16px 0px;
+  margin: 1rem 0rem;
 }
 
 .box-child-2 {
@@ -374,17 +384,18 @@ iframe {
 
 .half{
   width: 47.5%;
-  margin: 24px 0px;
+  margin: 1.5rem 0rem;
 }
 
-.form-box input, textarea{
+.form-box input, .form-box textarea{
   outline: none;
   border: 1px solid #d4d4d4;
-  padding: 16px 12px;
+  padding: 1rem 0.75rem;
+  border-radius: 4px;
 }
 
 .form-box input::placeholder, textarea::placeholder{
-  font-size: 13px;
+  font-size: 0.8rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -397,17 +408,18 @@ iframe {
   display: inline-block;
   border-radius: 0px;
   letter-spacing: 2px;
-  padding: 12px 32px;
-  margin-top: 28px;
+  padding: 0.75rem 2rem;
+  margin-top: 1.75rem;
+  border-radius: 4px;
 }
 
 .contact-info{
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   align-items: flex-start;
 }
 
 .contact-info i{
-  font-size: 24px;
+  font-size: 1.5rem;
   color: var(--dark);
 }
 
@@ -421,7 +433,7 @@ iframe {
 }
 
 .contact-info p{
-  font-size: 15px;
+  font-size: 0.95rem;
   color: var(--text-light);
   font-weight: 500;
 }
@@ -430,8 +442,8 @@ iframe {
 /* Section - 3 */
 
 .section-3 {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 4.4rem;
+  padding-bottom: 4.4rem;
   align-items: flex-start;
 }
 
@@ -441,12 +453,12 @@ iframe {
 
 .sec-3-text h3 {
   color: #fff;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .sec-3-text p {
   color: #fff;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.7;
 }
 
@@ -464,7 +476,7 @@ iframe {
 }
 
 .form input {
-  padding: 12px;
+  padding: 0.75rem;
   border-radius: 4px;
   border: 2px solid #0a4e92;
   outline: none;
@@ -473,7 +485,7 @@ iframe {
 
 .form input::placeholder {
   color: #fff;
-  font-size: 13px;
+  font-size: 0.8rem;
   letter-spacing: 0.5px;
   font-family: "Poppins", sans-serif;
 }
@@ -487,9 +499,9 @@ iframe {
   display: inline-block;
   text-align: center;
   width: 32%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 11px;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  font-size: 0.7rem;
 }
 
 .margin-right {
@@ -504,8 +516,8 @@ iframe {
 
 .footer-start {
   align-items: flex-start;
-  padding-top: 100px;
-  padding-bottom: 60px;
+  padding-top: 6.25rem;
+  padding-bottom: 3.75rem;
 }
 
 .foot-text {
@@ -513,19 +525,19 @@ iframe {
 }
 
 .footer-logo img {
-  width: 120px;
+  width: 7.5rem;
 }
 
 .foot-text p {
   font-weight: 500;
   color: var(--text-light);
-  margin: 24px 0px;
+  margin: 1.5rem 0rem;
 }
 
 .foot-text ul i {
   color: #2e2e2e;
-  font-size: 14px;
-  margin-right: 10px;
+  font-size: 0.9rem;
+  margin-right: 0.65rem;
 }
 
 .footer-links {
@@ -540,7 +552,7 @@ iframe {
 .links-section h6 {
   color: var(--primary);
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .links-section ul li {
@@ -549,7 +561,7 @@ iframe {
 
 .links-section ul a {
   color: var(--text-light);
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
@@ -566,11 +578,11 @@ iframe {
 
 .footer-end {
   text-align: center;
-  margin: 24px 0px;
+  margin: 1.5rem 0rem;
 }
 
 .footer-end span {
-  font-size: 11px;
+  font-size: 0.7rem;
   color: var(--text-light);
   font-weight: 500;
 }
